@@ -13,6 +13,9 @@ npm run dev
 # Para subir o modo produção, basta rodar os comandos a seguir
 npm run build
 npm start
+
+# Para rodar os testes, basta rodar o comando:
+npm run test
 ```
 
 Após rodar os comandos, basta acessar [http://localhost:3000](http://localhost:3000) com o seu navegador.
