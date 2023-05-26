@@ -26,7 +26,7 @@ export type PaginatedResponse<T> = {
     size: number;
 };
 
-export const fetchFromApi = async (params: { [key: string]: any }) => {
+export const fetchFromApi = async (params?: { [key: string]: any }) => {
     const baseUrl = "https://tools.texoit.com/backend-java/api/movies";
     const urlParams = new URLSearchParams(params).toString();
 
