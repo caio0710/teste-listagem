@@ -54,7 +54,7 @@ const Table: FunctionComponent<TableProps> = ({ apiPath, apiParams, columns, has
 
     return (
         <div className="relative">
-            <table className="w-full text-sm text-left text-gray-500 border">
+            <table className="w-full text-sm text-left text-gray-500 border" data-testid="table">
                 <TableHeader columns={columns} onChangeFilter={handleChangeFilter} />
                 <TableBody columns={columns} rows={hasPagination ? data?.content : data} />
             </table>
