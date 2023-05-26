@@ -52,7 +52,7 @@ const TablePagination: FunctionComponent<TablePaginationProps> = ({
                         <>
                             <PaginationItem onClickItem={onClickPage.bind(null, 1)}>{1}</PaginationItem>
                             <PaginationItem disabled>
-                                <EllipsisHorizontalIcon className="h-5 w-5" />
+                                <EllipsisHorizontalIcon className="h-5 w-5" data-testid="ellipsis-before" />
                             </PaginationItem>
                         </>
                     )}
@@ -72,7 +72,7 @@ const TablePagination: FunctionComponent<TablePaginationProps> = ({
                     {hasEllipsisAfter && (
                         <>
                             <PaginationItem disabled>
-                                <EllipsisHorizontalIcon className="h-5 w-5" />
+                                <EllipsisHorizontalIcon className="h-5 w-5" data-testid="ellipsis-after" />
                             </PaginationItem>
                             <PaginationItem onClickItem={onClickPage.bind(null, numberOfPages)}>
                                 {numberOfPages}

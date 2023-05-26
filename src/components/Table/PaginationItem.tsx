@@ -33,6 +33,7 @@ const PaginationItem: FunctionComponent<PaginationItemProps> = ({
                 className={`px-3 py-2 leading-tight disabled:opacity-60 ${itemClass}`}
                 onClick={onClickItem}
                 disabled={disabled}
+                data-testid="pagination-item"
             >
                 {children}
             </button>
