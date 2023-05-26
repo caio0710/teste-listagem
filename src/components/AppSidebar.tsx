@@ -21,9 +21,7 @@ const SidebarItem = ({ route }: { route: RouteType }) => {
     );
 };
 
-interface AppSidebarProps {}
-
-const AppSidebar: FunctionComponent<AppSidebarProps> = () => {
+const AppSidebar: FunctionComponent = () => {
     const router = useRouter();
 
     const availableRoutes: RouteType[] = [
